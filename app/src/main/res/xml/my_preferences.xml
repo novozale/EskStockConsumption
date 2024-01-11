@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Сетевые настройки">
+
+        <EditTextPreference
+            android:defaultValue="https://services.elektroskandia.ru:7443/ESKServices.svc/"
+            android:key="service_url"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:title="Адрес сервиса" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_certificat"
+            android:title="Проверять сертификат" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Настройки пользователя">
+
+        <EditTextPreference
+            android:key="my_login"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:title="Логин" />
+        <EditTextPreference
+            android:key="my_password"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:title="Пароль" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="ориентация экрана">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="screen_orientation"
+            android:title="горизонтальная" />
+    </PreferenceCategory>
+</PreferenceScreen>

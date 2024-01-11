@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sales_order_detail_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="#CCDDDDDD"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sales_order_detail_one_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/sales_order_detail_str_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sales_order_detail_strnum_lbl"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:gravity="center_vertical"
+                android:text="N строки:" />
+
+            <TextView
+                android:id="@+id/sales_order_detail_strnum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:textColor="@color/Navy" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sales_order_detail_itemcode_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sales_order_detail_itemcode_lbl"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:gravity="center_vertical"
+                android:text="Код товара:" />
+
+            <TextView
+                android:id="@+id/sales_order_detail_itemcode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:textColor="@color/Navy"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sales_order_detail_barcode_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sales_order_detail_barcode_lbl"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:gravity="center_vertical"
+                android:text="Штрихкод:" />
+
+            <TextView
+                android:id="@+id/sales_order_detail_barcode"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:textColor="@color/Navy" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sales_order_detail_itemname_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sales_order_detail_itemname_lbl"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:gravity="center_vertical"
+                android:text="Товар:" />
+
+            <TextView
+                android:id="@+id/sales_order_detail_itemname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:textColor="@color/Navy"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sales_order_detail_cell_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sales_order_detail_itemcell_lbl"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:gravity="center_vertical"
+                android:text="Ячейка:" />
+
+            <TextView
+                android:id="@+id/sales_order_detail_itemcell"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:textColor="@color/Navy" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sales_order_detail_itemtype_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sales_order_detail_itemtype_lbl"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:gravity="center_vertical"
+                android:text="Тип товара:" />
+
+            <TextView
+                android:id="@+id/sales_order_detail_itemtype"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:textColor="@color/Navy" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sales_order_detail_iscabel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sales_order_detail_iscabel_lbl"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:gravity="center_vertical"
+                android:text="Кабель или нет:" />
+
+            <TextView
+                android:id="@+id/sales_order_detail_iscabel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:textColor="@color/Navy" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sales_order_detail_requested_size_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sales_order_detail_requestedcabelparts_lbl"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:gravity="center_vertical"
+                android:text="Запрошенные куски:" />
+
+            <TextView
+                android:id="@+id/sales_order_detail_requestedcabelparts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:textColor="@color/Red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sales_order_detail_orderqty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sales_order_detail_orderqty_lbl"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:gravity="center_vertical"
+                android:text="Кол-во в заказе:" />
+
+            <TextView
+                android:id="@+id/sales_order_detail_orderqty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:textColor="@color/Navy" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sales_order_detail_avl_qty_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sales_order_detail_avlqty_lbl"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:gravity="center_vertical"
+                android:text="Доступно:" />
+
+            <TextView
+                android:id="@+id/sales_order_detail_avlqty"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:textColor="@color/Navy" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sales_order_detail_toassembly_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sales_order_detail_toassembleqty_lbl"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#EEEEEE"
+                android:gravity="center_vertical"
+                android:text="Отгрузить:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sales_order_detail_toassembleqty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="3dp"
+                android:textColor="@color/Navy"
+                android:textColorHighlight="@android:color/holo_green_dark"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sales_order_detail_write_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sales_order_detail_marktowrite_lbl"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#DDDDDD"
+                android:gravity="center_vertical"
+                android:text="Записать:"
+                android:textColor="@android:color/holo_green_dark"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/sales_order_detail_marktowrite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:focusedByDefault="false"
+                android:text=" " />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

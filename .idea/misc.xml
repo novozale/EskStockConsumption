@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Data/Workplaces/Android/AndroidStudioProjects/EskStockConsumption/app/src/main/res/layout/activity_item_partions.xml" value="0.3723958333333333" />
+        <entry key="..\:/Data/Workplaces/Android/AndroidStudioProjects/EskStockConsumption/app/src/main/res/layout/activity_main.xml" value="0.3723958333333333" />
+        <entry key="..\:/Data/Workplaces/Android/AndroidStudioProjects/EskStockConsumption/app/src/main/res/layout/activity_purchase_order_list.xml" value="0.3723958333333333" />
+        <entry key="..\:/Data/Workplaces/Android/AndroidStudioProjects/EskStockConsumption/app/src/main/res/layout/activity_sales_order.xml" value="0.3723958333333333" />
+        <entry key="..\:/Data/Workplaces/Android/AndroidStudioProjects/EskStockConsumption/app/src/main/res/layout/activity_sales_order_list.xml" value="0.3723958333333333" />
+        <entry key="..\:/Data/Workplaces/Android/AndroidStudioProjects/EskStockConsumption/app/src/main/res/layout/activity_stock_consumption.xml" value="0.3723958333333333" />
+        <entry key="..\:/Data/Workplaces/Android/AndroidStudioProjects/EskStockConsumption/app/src/main/res/layout/partions_list.xml" value="0.3723958333333333" />
+        <entry key="..\:/Data/Workplaces/Android/AndroidStudioProjects/EskStockConsumption/app/src/main/res/layout/sales_order_detail.xml" value="0.3723958333333333" />
+        <entry key="..\:/Data/Workplaces/Android/AndroidStudioProjects/EskStockConsumption/app/src/main/res/layout/sales_order_item.xml" value="0.3723958333333333" />
+        <entry key="..\:/Data/Workplaces/Android/AndroidStudioProjects/EskStockConsumption/app/src/main/res/layout/settings_wrappper.xml" value="0.3723958333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

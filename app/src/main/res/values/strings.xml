@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EskStockConsumption</string>
+    <string name="menu_settings_name">Настройки</string>
+    <string name="menu_exit_name">Выход</string>
+    <string name="menu_back_name">Выход</string>
+    <string name="settings_name">Настройки программы</string>
+    <string name="OrderNumberLabelName">Заказ</string>
+    <string name="SalesOrdersLabelName">Заказы на подборку</string>
+    <string name="PurchaseOrdersLabelName">Счета Фактуры на приемку</string>
+    <string name="Info">Начать ввод</string>
+    <string name="RefreshButton">Обновить</string>
+</resources>

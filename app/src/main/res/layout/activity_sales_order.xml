@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rtsr.eskstockconsumption.SalesOrder">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sales_order_item_order_id"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/sales_order_item_order_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="Заказ N"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sales_order_item_order_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="TextView"
+                android:textColor="@color/Navy"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/sales_order_item_btn_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Выполнено"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/sales_order_item_btn_write"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Записать"
+                android:textColor="@android:color/holo_green_dark"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sales_order_item_btn_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Обновить" />
+
+            <Button
+                android:id="@+id/sales_order_item_btn_selall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Выбрать все" />
+
+            <Button
+                android:id="@+id/sales_order_item_btn_deselectall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Снять выбор" />
+
+            <Button
+                android:id="@+id/sales_order_item_btnscan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/mr_button_connected_light"
+                android:text="Скан"
+                android:textColor="@color/Red"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#EEEEEE"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/activity_sales_order_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:clickable="true"
+                android:listSelector="#02fff6">
+
+
+                <SurfaceView
+                    android:id="@+id/camera_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="auto"
+                    android:focusableInTouchMode="false"
+                    android:focusedByDefault="true"
+                    android:longClickable="true" />
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress_order_sh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteY="48dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Выполнение процедуры..." />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scaner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/sales_order_item_btnstopscan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/camera_view"
+            android:text="Стоп скан"
+            android:textColor="@color/Red"
+            android:textStyle="bold" />
+
+        <SurfaceView
+            android:id="@+id/transparent_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:longClickable="true" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
